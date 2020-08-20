@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo</h1>
+    <p>Preencha as informações a baixo</p>
+
+    <form id="form1" action="api/values" method="post" enctype="application/x-www-form-urlencoded">
+        <div class="text-center">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+        </div>
+        <br />
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" />
+        </div>
+        <br />
+        <div  class="text-center">
+            <label for="dataDeNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataDeNascimento" />
+        </div>
+        <br />
+        <div  class="text-center" >
+            <label for="dataCadastro">Data de Cadastro:</label>
+            <input type="date" id="dataCadastro" />
+        </div>
+        <br />
+        <div class="text-center">
+            <label for="rendaFamiliar">Renda Familiar:</label>
+            <input type="text" id="dataCadastro" />
+        </div>
+        <br />
+        <div class="button">
+            <button type="submit">Enviar Dados</button>
+        </div>
+    </form>
+</div>
